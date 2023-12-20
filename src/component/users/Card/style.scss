@@ -1,0 +1,64 @@
+.card{
+    margin: 50px 0;
+    // box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+    width: 230px;
+
+    img{
+        height: 100%;
+        width: 100%;
+        border-radius: 3px;
+        transition: .5s;
+    }
+
+    .intro{
+        height: 70px;
+        padding: 6px;
+        box-sizing: border-box;
+        position: absolute;
+        background:transparent;
+        color: white;
+        bottom: 0px;
+        transition: .5s;
+        
+
+        .card__item{
+            margin: 15px;
+            visibility: hidden;
+
+            button{
+                border-color: #fff;
+                background: transparent;
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+        h1{
+            margin: 10px;
+            font-size: 25px;
+        }
+
+        
+    }
+
+    &:hover{
+        cursor: pointer;
+        
+        .intro{
+            height: 100%;
+            top: 130px;       
+        }
+
+        .card__item{
+            opacity: 1;
+            visibility: visible;    
+        }
+
+        img{
+            transform: scale(1.1) rotate(-3deg);
+        }
+    }
+
+}
